@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style_admin.css">
+    <script type="text/javascript" src="code.js"></script>
+    <title>Document</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=9EWN1i1eW-FqUhOEeUb99GWdcnWKRC5dGKkaRfLY-Rkc11PiS47ubneSzxSY4q1Tw_rl7n1jMB7RKJH8cpXLa2scSuQ8EKIua_nfVxlyFfHYdoDwfjrV7mofGITVdLQ2aFsw4eAl2czI3yRJavuAvEHnv_BzRgjxb5NiW5uFGKIzoh4lRXaLVCssfcSpRR_NLBIN7uKbvwXpbEbQRreMgMcVTaD_0K2wt_6YPeVVILdUQwTvXI5HQbz6ro61RppCBTaEGHoi8nyJRfc043iAh_TgXdSqwIVDBEr-ftZ8nrMmZH-1qwaeF_9FqG8bcUb_PmsqreLB0m0Q53C1Npsahg" charset="UTF-8"></script></head>
+<body>
+    <div class="firstline">
+        <h1>Восславься, админ!</h1> 
+        <button>Выход</button> 
+        <!-- позиция справа от заголовка -->
+    </div>
+    <select class="search" name="changeclient" size="1">
+        <option disabled>Выберите клиента</option>
+        <option value="k1" selected>Клиент1</option>
+        <option value="k2">Клиент2</option>
+    </select>
+    <div class="tasks"> <!--grid-->
+        <div>
+            <!-- <span class="modal__close" aria-label="Закрыть" role="button" onclick="deleteTask">
+                <img src="close.svg">
+            </span> -->
+            <input class="modal__close" type="image" src="picture/close.svg" alt="Удалить" onclick="deleteTask()">
+            <p>Задача 1</p>
+            <p>Интегралы</p>
+            <span class="modal__edit" aria-label="Закрыть" tabindex="0" role="button">
+                <img src="picture/edit.svg">
+            </span>
+        </div>
+        <div class="add_new">
+            <span class="modal__add" aria-label="Добавить" tabindex="0" role="button">
+                <img src="picture/add.svg">
+            </span>
+        </div>
+    </div>
+</body>
+</html>

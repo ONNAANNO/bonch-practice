@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style_admin.css">
+    <script type="text/javascript" src="code.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="firstline">
+        <h1>Восславься, админ!</h1> 
+        <button action ='exit'>Выход</button> 
+        <!-- позиция справа от заголовка -->
+    </div>
+    <select class="search" name="changeclient" size="1">
+        <option disabled>Выберите клиента</option>
+        <option value="k1" selected>Клиент1</option>
+        <option value="k2">Клиент2</option>
+    </select>
+    <div class="tasks"> <!--grid-->
+        <div>
+            <!-- <span class="modal__close" aria-label="Закрыть" role="button" onclick="deleteTask">
+                <img src="close.svg">
+            </span> -->
+            <input class="modal__close" type="image" src="picture/close.svg" alt="Удалить" onclick="deleteTask()">
+            <p>Задача 1</p>
+            <p>Интегралы</p>
+            <span class="modal__edit" aria-label="Закрыть" tabindex="0" role="button">
+                <img src="picture/edit.svg">
+            </span>
+        </div>
+        <div class="add_new">
+            <span class="modal__add" aria-label="Добавить" tabindex="0" role="button">
+                <img src="picture/add.svg">
+            </span>
+        </div>
+    </div>
+</body>
+</html>
